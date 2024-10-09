@@ -25,7 +25,8 @@ def une_partie(min, max):
             print(f"Bravo! Bonne réponse\nVous avez réussi en :{nbr_essai} essai(s)")
 
 
-while True:
+playing = True
+while playing:
     min = int(input("Choisissez un minimum : "))
     max = int(input("Choisissez un maximum : "))
     une_partie(min, max)
@@ -34,4 +35,4 @@ while True:
         print("bonne chance!")
     else:
         print("Merci et au revoir")
-        break
+        playing = False
